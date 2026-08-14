@@ -1,0 +1,13 @@
+{
+  "domain": "aqara_fp300_quirk",
+  "name": "Aqara FP300 ZHA Quirk",
+  "codeowners": ["@BotFatherZeus"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/BotFatherZeus/ha-aqara-fp300-quirk",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/BotFatherZeus/ha-aqara-fp300-quirk/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}
