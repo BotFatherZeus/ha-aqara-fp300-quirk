@@ -44,3 +44,8 @@ coordinator initialises slowly, registration normally wins the race and the
 entities survive restarts. If presence ever reads *unavailable* after an HA
 restart, reload the **ZHA** integration once (rebuilds devices from cache — no
 device interaction needed).
+
+## HA 2026.11+ (zha 2.4.x)
+
+HA 2026.11 ships a basic built-in FP300 quirk (zha-device-handlers PR #5530) with only occupancy + motion. Since v0.2.0 this integration removes that built-in entry from ZHA's quirk registry before registering the full quirk, so the config entities (sensitivity, absence delay, detection ranges, ...) come back. Tests: `python -m unittest discover -s tests` in a venv with `zha==2.4.2 zha-quirks==2.4.1`.
+

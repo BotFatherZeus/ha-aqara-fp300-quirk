@@ -1,2 +1,22 @@
 __pycache__/
 *.pyc
+
+# Python
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets / local state
+.env
+.env.*
+!.env.example
+secrets.json
+secrets.yaml
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
